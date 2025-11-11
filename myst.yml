@@ -3,20 +3,21 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
-  title: Prototype Project Repo
-  github: https://github.com/projectpythia/cookbook-template
+  title: Exploring CMIP6 Climate Data and Surface Temperature
+  github:
   authors:
     - name: Zakara Drakes
-  copyright: '2025'
+  copyright: '2024'
   toc:
     - file: README.md
     - title: Preamble
       children:
         - file: notebooks/how-to-cite.md
-    - title: Introduction
+    - title: Notebooks
       children:
-        - file: notebooks/notebook-template.ipynb
+        - file: notebooks/Exploring-CMIP6-Climate-Data
+        - file: notebooks/Exploring-CMIP6-Surface-Temperature
   jupyter:
       binder:
-        repo: projectpythia/cookbook-template
+        repo: projectpythia/Exploring-CMIP6-Climate-Data-and-Surface-Temperature
 

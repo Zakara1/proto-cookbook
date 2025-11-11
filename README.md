@@ -1,4 +1,4 @@
-# (Replace_with_your_title) Cookbook
+# Exploring CMIP6 Climate Data and Surface Temperature Cookbook
 
 <img src="thumbnails/thumbnail.png" alt="thumbnail" width="300"/>
 
@@ -6,35 +6,47 @@
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-_See the [Cookbook Contributor's Guide](https://projectpythia.org/cookbook-guide) for step-by-step instructions on how to create your new Cookbook and get it hosted on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org)!_
 
-This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
+
+This Project Pythia Cookbook covers how to access, analyze, and visualize CMIP6 climate model data using Python tools such as Intake-ESM, Xarray, and Cartopy.
 
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+This cookbook was created to help students learn how to work with CMIP6 data. It enables students to remotely query, open, and visualize large CMIP6 datasets without downloading terabytes of data.
 
 ## Authors
 
-[First Author](https://github.com/first-author1), [Second Author](https://github.com/second-author2), etc. _Acknowledge primary content authors here_
-
-### Contributors
-
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
-</a>
+[Zakara Drakes](https://github.com/zakara1)
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+Notebook Directory:
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+Notebook 1: Exploring CMIP6 Climate Data
+- Purpose:
+  Demonstrates how to discover and load CMIP6 data using the Intake-ESM catalog.
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+- Key Steps:
+    - Access the CMIP6 catalog via intake-esm.
+    - Filter datasets by variable, experiment, and model.
+    - Explore metadata (dimensions, coordinates, attributes).
+    - Convert queried collections to xarray.Dataset objects.
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+- Learning Outcome:
+  Understand how to query, filter, and access cloud-optimized CMIP6 data using Pangeo tools.
 
-(Add content for this section, e.g., "Example workflows include ... ")
+Notebook 2: Exploring CMIP6 Surface Temperature
+- Purpose:
+  Builds on the first notebook to analyze near-surface air temperature (tas).
+
+- Key Steps:
+    - Load model data for tas under a historical scenario.
+    - Compute climatological means and anomalies.
+    - Visualize spatial patterns using cartopy and matplotlib.
+    - Interpret global warming trends and temporal variations.
+
+- Learning Outcome:
+  Learn to subset, aggregate, and visualize CMIP6 temperature fields to assess model behavior.
 
 ## Running the Notebooks
 
@@ -66,22 +78,20 @@ executable book chapter.
 
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-(Replace "cookbook-example" with the title of your cookbooks)
-
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+1. Clone the `https://github.com/ProjectPythia/Exploring-CMIP6-Climate-Data-and-Surface-Temperature-Cookbook` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
+    git clone https://github.com/ProjectPythia/Exploring-CMIP6-Climate-Data-and-Surface-Temperature-Cookbook.git
    ```
 
-1. Move into the `cookbook-example` directory
+1. Move into the `Exploring-CMIP6-Climate-Data-and-Surface-Temperature-Cookbook` directory
    ```bash
-   cd cookbook-example
+   cd Exploring-CMIP6-Climate-Data-and-Surface-Temperature-Cookbook
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate cookbook-example
+   conda activate Exploring-CMIP6-Climate-Data-and-Surface-Temperature-Cookbook
    ```
 1. Move into the `notebooks` directory and start up Jupyterlab
    ```bash

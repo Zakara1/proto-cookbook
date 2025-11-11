@@ -1,7 +1,28 @@
-name: cookbook-dev
+name: cmip6-cookbook-dev
 channels:
   - conda-forge
+  - defaults
 dependencies:
+  - python=3.11
   - jupyterlab
-  - mystmd
-  - jupyterlab-myst
+  - notebook
+  - ipython
+  - ipykernel
+  - pandas
+  - numpy
+  - xarray
+  - dask
+  - intake
+  - intake-esm
+  - matplotlib
+  - cartopy
+  - hvplot
+  - holoviews
+  - cmocean
+  - netcdf4
+  - zarr
+  - pooch
+  - tqdm
+  - geopandas
+  - shapely
+  - pip
